@@ -46,6 +46,16 @@
 
 - [DNS笔记](https://www.cnblogs.com/ZhuChangwu/p/15241211.html)
 
+### 文件管理
+
+- [Linux中软连接与硬连接](./workspace/senior/p1)
+- [rm删除文件后磁盘仍然占用](https://blog.csdn.net/zwe7616175/article/details/100728273)
+- [Find命令查找最近几天修改的文件](https://blog.csdn.net/linux_hua130/article/details/120782534)
+
+### 磁盘管理
+
+- [df和du的使用及区别](https://blog.csdn.net/liuyang9909/article/details/123249917)
+
 ### Namespace
 
 - [UTS Namespace](./workspace/namespace/uts-namespace)
@@ -55,12 +65,8 @@
 
 ## Quiz
 
-- [Linux中软连接与硬连接](./workspace/senior/p1)
 - [iptables四表五链](https://mp.weixin.qq.com/s/bwK_ECwmL6OAjKHkiqGNpA)
 - [Linux中grep|awk|sort|uniq](./workspace/senior/p2)
-- [rm删除文件后磁盘仍然占用](https://blog.csdn.net/zwe7616175/article/details/100728273)
-- [Find命令查找最近几天修改的文件](https://blog.csdn.net/linux_hua130/article/details/120782534)
-- [df和du的使用及区别](https://blog.csdn.net/liuyang9909/article/details/123249917)
 - [Linux中buffer和cache的区别](https://www.php.cn/linux-489224.html)
 
 

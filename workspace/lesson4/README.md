@@ -29,7 +29,7 @@ appending output to nohup.out
 
 ​	这时我们打开 root 目录 可以看到生成了 nohup.out 文件。
 
-​	如果要停止运行，你需要使用以下命令查找到 nohup 运行脚本到 PID，然后使用 kill 命令来删除：
+​	如果要停止运行，你需要使用以下命令查找到 nohup 运行脚本的PID，然后使用 kill 命令来删除：
 
 ```shell
 $ nohup /root/runoob.sh &

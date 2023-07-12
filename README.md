@@ -10,7 +10,7 @@
 
 * [lesson3:klill命令](./workspace/lesson3)
 
-* [lesson4: nohup命令详解](./workspace)
+* [lesson4: nohup命令详解](./workspace/lesson4)
 
 * [lesson5：source命令](./workspace/lesson5)
 

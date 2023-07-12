@@ -18,7 +18,7 @@
 
 * [lesson7：软件包管理](./workspace/lesson7)
 
-* [lesson8：网络管理](./workspace/senior/lesson8)
+* [lesson8：网络管理](./workspace/lesson8)
 
 * [lesson9：Linux top命令的数据从哪儿来？](./workspace/lesson9)
 

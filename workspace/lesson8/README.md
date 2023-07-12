@@ -1,5 +1,27 @@
 # 网络管理
 
+## 相关命令
+
+| 常用命令                                                     | 作用                                 |
+| ------------------------------------------------------------ | ------------------------------------ |
+| ifconfig                                                     | 查看⽹络接⼝属性                     |
+| ifconfig eth0                                                | 查看某⽹卡的配置                     |
+| route -n                                                     | 查看路由表                           |
+| netstat -lntp                                                | 查看所有监听端⼝                     |
+| netstat -antp                                                | 查看已经建⽴的TCP连接                |
+| netstat -lutp                                                | 查看TCP/UDP的状态信息                |
+| ifup eth0                                                    | 启⽤eth0⽹络设备                     |
+| ifdown eth0                                                  | 禁⽤eth0⽹络设备                     |
+| iptables -L                                                  | 查看iptables规则                     |
+| ifconfig eth0 192.168.1.1 netmask 255.255.255.0              | 配置ip地址                           |
+| dhclient eth0                                                | 以dhcp模式启⽤eth0                   |
+| route add -net 0/0 gw Gateway_IP                             | 配置默认⽹关                         |
+| route add -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.1 | 配置静态路由到达⽹络'192.168.0.0/16' |
+| route del 0/0 gw Gateway_IP                                  | 删除静态路由                         |
+| hostname                                                     | 查看主机名                           |
+| host [www.baidu.com](http://www.baidu.com)                   | 解析主机名                           |
+| nslookup [www.baidu.com](http://www.baidu.com)               | 查询DNS记录，查看域名解析是否正常    |
+
 
 
 ## 网络状态查看
@@ -150,35 +172,3 @@ netstat -lntp
 
 
 
-
-
-
-
-
-
-
-
-
-## ⽹络和进程管理
-
-| 常用命令                                                     | 作用                                 |
-| ------------------------------------------------------------ | ------------------------------------ |
-| ifconfig                                                     | 查看⽹络接⼝属性                     |
-| ifconfig eth0                                                | 查看某⽹卡的配置                     |
-| route -n                                                     | 查看路由表                           |
-| netstat -lntp                                                | 查看所有监听端⼝                     |
-| netstat -antp                                                | 查看已经建⽴的TCP连接                |
-| netstat -lutp                                                | 查看TCP/UDP的状态信息                |
-| ifup eth0                                                    | 启⽤eth0⽹络设备                     |
-| ifdown eth0                                                  | 禁⽤eth0⽹络设备                     |
-| iptables -L                                                  | 查看iptables规则                     |
-| ifconfig eth0 192.168.1.1 netmask 255.255.255.0              | 配置ip地址                           |
-| dhclient eth0                                                | 以dhcp模式启⽤eth0                   |
-| route add -net 0/0 gw Gateway_IP                             | 配置默认⽹关                         |
-| route add -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.1 | 配置静态路由到达⽹络'192.168.0.0/16' |
-| route del 0/0 gw Gateway_IP                                  | 删除静态路由                         |
-| hostname                                                     | 查看主机名                           |
-| host [www.baidu.com](http://www.baidu.com)                   | 解析主机名                           |
-| nslookup [www.baidu.com](http://www.baidu.com)               | 查询DNS记录，查看域名解析是否正常    |
-
-## 

@@ -4,27 +4,34 @@
 
 ## 基础篇
 
-* [lesson1:打包和解压](./workspace/lesson1)
-
-* [lesson2:⽂件查看和处理](./workspace/lesson2)
-
-* [lesson3:klill命令](./workspace/lesson3)
-
-* [lesson4: nohup命令详解](./workspace/lesson4)
-
-* [lesson5：source命令](./workspace/lesson5)
-
-* [lesson6：进程管理](./workspace/lesson6)
-
 * [lesson7：软件包管理](./workspace/lesson7)
 
-* [lesson8：网络管理](./workspace/lesson8)
+### 进程管理
 
-* [lesson9：Linux top命令的数据从哪儿来？](./workspace/lesson9)
+- [相关命令](./workspace/lesson6)
+- [nohup命令详解](./workspace/lesson4)
+- [klill命令](./workspace/lesson3)
+- [top命令的数据从哪儿来？](./workspace/lesson9)
 
-* [lesson10：Linux 用户和用户组管理](./workspace/lesson10)
+### 网络管理
 
-  
+- [相关命令](./workspace/lesson8)
+
+### 文件管理
+
+- [打包和解压](./workspace/lesson1)
+- [⽂件查看和处理](./workspace/lesson2)
+- [source命令](./workspace/lesson5)
+
+### 磁盘管理
+
+- [相关命令](./workspace/lesson11)
+- [LVM的使用](./workspace/lesson12)
+- [df和du的使用及区别](https://blog.csdn.net/liuyang9909/article/details/123249917)
+
+[lesson10：Linux 用户和用户组管理](./workspace/lesson10)
+
+
 
 
 ## 进阶篇
@@ -52,10 +59,6 @@
 - [rm删除文件后磁盘仍然占用](https://blog.csdn.net/zwe7616175/article/details/100728273)
 - [Find命令查找最近几天修改的文件](https://blog.csdn.net/linux_hua130/article/details/120782534)
 
-### 磁盘管理
-
-- [df和du的使用及区别](https://blog.csdn.net/liuyang9909/article/details/123249917)
-
 ### Namespace
 
 - [UTS Namespace](./workspace/namespace/uts-namespace)
@@ -77,8 +80,6 @@
 
 
 
-
-
 ## Book
 
 
@@ -88,24 +89,6 @@
 - [赐我白日梦](https://www.cnblogs.com/ZhuChangwu/category/1509541.html)
 
 ## Video
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -147,22 +130,7 @@
 | 查看io读写/cpu使⽤情况      | 查询cpu使⽤情况（1秒⼀次，共10次） |
 | sar -d 1 10                 | 查询磁盘性能                       |
 
-## 磁盘和分区
-
-| 常用命令                            | 作用                           |
-| ----------------------------------- | ------------------------------ |
-| fdisk -l                            | 查看所有磁盘分区               |
-| swapon -s                           | 查看所有交换分区               |
-| df -h                               | 查看磁盘使⽤情况及挂载点       |
-| df -hl                              | 同上                           |
-| du -sh /dir                         | 查看指定某个⽬录的⼤⼩         |
-| du -sk * \| sort -rn                | 从⾼到低依次显示⽂件和⽬录⼤⼩ |
-| mount /dev/hda2 /mnt/hda2           | 挂载hda2盘                     |
-| mount -t ntfs /dev/sdc1 /mnt/usbhd1 | 指定⽂件系统类型挂载（如ntfs） |
-| mount -o loop xxx.iso /mnt/cdrom    | 挂 载 iso ⽂ 件                |
-| umount -v /dev/sda1                 | 通过设备名卸载                 |
-| umount -v /mnt/mymnt                | 通过挂载点卸载                 |
-| fuser -km /mnt/hda1                 | 强制卸载(慎⽤)                 |
+## 
 
 ## ⽤户和⽤户组
 
@@ -187,36 +155,11 @@
 | cut -d: -f1 /etc/passwd                               | 查看系统所有⽤户                               |
 | cut -d: -f1 /etc/group                                | 查看系统所有组                                 |
 
-## ⽹络和进程管理
-
-| 常用命令                                                     | 作用                                 |
-| ------------------------------------------------------------ | ------------------------------------ |
-| ifconfig                                                     | 查看⽹络接⼝属性                     |
-| ifconfig eth0                                                | 查看某⽹卡的配置                     |
-| route -n                                                     | 查看路由表                           |
-| netstat -lntp                                                | 查看所有监听端⼝                     |
-| netstat -antp                                                | 查看已经建⽴的TCP连接                |
-| netstat -lutp                                                | 查看TCP/UDP的状态信息                |
-| ifup eth0                                                    | 启⽤eth0⽹络设备                     |
-| ifdown eth0                                                  | 禁⽤eth0⽹络设备                     |
-| iptables -L                                                  | 查看iptables规则                     |
-| ifconfig eth0 192.168.1.1 netmask 255.255.255.0              | 配置ip地址                           |
-| dhclient eth0                                                | 以dhcp模式启⽤eth0                   |
-| route add -net 0/0 gw Gateway_IP                             | 配置默认⽹关                         |
-| route add -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.1 | 配置静态路由到达⽹络'192.168.0.0/16' |
-| route del 0/0 gw Gateway_IP                                  | 删除静态路由                         |
-| hostname                                                     | 查看主机名                           |
-| host [www.baidu.com](http://www.baidu.com)                   | 解析主机名                           |
-| nslookup [www.baidu.com](http://www.baidu.com)               | 查询DNS记录，查看域名解析是否正常    |
-| ps -ef                                                       | 查看所有进程                         |
-| ps -ef \| grep codesheep                                     | 过滤出你需要的进程                   |
-| top                                                          | 实时显示进程状态                     |
-| vmstat 1 20                                                  | 每1秒采⼀次系统状态，采20次          |
-| iostat                                                       | iostat                               |
-| sar -u 1 10                                                  | 查询cpu使⽤情况（1秒⼀次，共10次）   |
-| sar -d 1 10                                                  | 查询磁盘性能                         |
+## 
 
 ## 常⻅系统服务命令
+
+
 
 | 常用命令                   | 作用         |
 | -------------------------- | ------------ |

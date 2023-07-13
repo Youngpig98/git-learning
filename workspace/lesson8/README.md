@@ -10,8 +10,8 @@
 | netstat -lntp                                                | 查看所有监听端⼝                     |
 | netstat -antp                                                | 查看已经建⽴的TCP连接                |
 | netstat -lutp                                                | 查看TCP/UDP的状态信息                |
-| ifup eth0                                                    | 启⽤eth0⽹络设备                     |
-| ifdown eth0                                                  | 禁⽤eth0⽹络设备                     |
+| ifup eth0                                                    | 只启⽤eth0⽹络设备                   |
+| ifdown eth0                                                  | 只禁⽤eth0⽹络设备                   |
 | iptables -L                                                  | 查看iptables规则                     |
 | ifconfig eth0 192.168.1.1 netmask 255.255.255.0              | 配置ip地址                           |
 | dhclient eth0                                                | 以dhcp模式启⽤eth0                   |
@@ -156,7 +156,7 @@ tcpdump src host 192.168.0.1 and dst port not telnet -l > test.txt
 ### netstat
 
 ```shell
-netstat -lntp
+netstat -lntp #查看tcp端口占用情况
 ```
 
 
@@ -168,7 +168,6 @@ netstat -lntp
 
 
 ## network和networkmanager两套工具配置网络
-
 
 
 

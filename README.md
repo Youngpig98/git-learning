@@ -8,18 +8,19 @@
 
 ### 进程管理
 
-- [相关命令](./workspace/lesson6)
+- [基本命令](./workspace/lesson6)
 - [nohup命令详解](./workspace/lesson4)
 - [klill命令](./workspace/lesson3)
 - [top命令的数据从哪儿来？](./workspace/lesson9)
 
 ### 网络管理
 
-- [相关命令](./workspace/lesson8)
+- [基础命令](./workspace/lesson8)
+- [VMware三种网络模式配置详解](https://blog.csdn.net/m0_61503020/article/details/128215674)
 
 ### 文件管理
 
-- [相关命令](./workspace/lesson13)
+- [基础命令](./workspace/lesson13)
 - [打包和解压](./workspace/lesson1)
 - [⽂件查看和处理](./workspace/lesson2)
 - [source命令](./workspace/lesson5)
@@ -27,7 +28,7 @@
 
 ### 磁盘管理
 
-- [相关命令](./workspace/lesson11)
+- [基础命令](./workspace/lesson11)
 - [LVM的使用](./workspace/lesson12)
 - [df和du的使用及区别](https://blog.csdn.net/liuyang9909/article/details/123249917)
 
@@ -168,5 +169,4 @@
 | systemctl restart <服务名> | 重启某个服务 |
 | systemctl enable <服务名>  | 关闭⾃启动   |
 | systemctl disable <服务名> | 关闭⾃启动   |
-
 

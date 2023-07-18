@@ -5,6 +5,7 @@
 ## 基础篇
 
 * [lesson7：软件包管理](./workspace/lesson7)
+* [Linux常用实战脚本](https://blog.csdn.net/ver_mouth__/article/details/128812171)
 
 ### 进程管理
 
@@ -31,6 +32,7 @@
 - [基础命令](./workspace/lesson11)
 - [LVM的使用](./workspace/lesson12)
 - [df和du的使用及区别](https://blog.csdn.net/liuyang9909/article/details/123249917)
+- [服务器硬件及RAID配置实战](https://blog.csdn.net/ver_mouth__/article/details/123849048)
 
 
 
@@ -88,6 +90,7 @@
 ## Blog
 
 - [赐我白日梦](https://www.cnblogs.com/ZhuChangwu/category/1509541.html)
+- [糖醋-小排顾](https://blog.csdn.net/ver_mouth__?type=blog)
 
 ## Video
 

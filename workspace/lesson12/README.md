@@ -1,5 +1,7 @@
 # LVM
 
+
+
 ​	在进行LVM的学习之前，我们先想一个场景：
 ​	今天我们在我们的虚拟机上安装了一个Linux的操作系统，这个虚拟机只有一块500G的硬盘。现在我们要规划使用这个硬盘，假设我是使用的MBR的方式，我们会怎么去做?
 
@@ -106,4 +108,9 @@ $mount /app
 
 ## 参考
 
+[LVM与磁盘配额](https://blog.csdn.net/ver_mouth__/article/details/123843823)
+
 [一篇看懂！Linux磁盘的管理（分区、格式化、挂载），LVM逻辑卷，RAID磁盘阵列](https://zhuanlan.zhihu.com/p/296777898)
+
+[使用fdisk进行磁盘分区](https://blog.csdn.net/lyc_258465/article/details/127726607)
+

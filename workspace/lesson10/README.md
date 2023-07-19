@@ -1,6 +1,31 @@
 # Linux 用户和用户组管理
 
-​	**先阅读这篇[文章](https://blog.csdn.net/ver_mouth__/article/details/123772661)**
+## 常用命令
+
+| 常用命令                                              | 作用                                           |
+| ----------------------------------------------------- | ---------------------------------------------- |
+| useradd codesheep                                     | 创建⽤户                                       |
+| userdel -r codesheep                                  | 删除⽤户                                       |
+| usermod -g group_name user_name                       | 修改⽤户的组                                   |
+| usermod -aG group_name user_name                      | 将⽤户添加到组                                 |
+| usermod -s /bin/ksh -d /home/codepig –g dev codesheep | 修改⽤户codesheep的登录Shell、主⽬录以及⽤户组 |
+| groups test                                           | 查看test⽤户所在的组                           |
+| groupadd group_name                                   | 创建⽤户组                                     |
+| groupdel group_name                                   | 删除⽤户组                                     |
+| groupmod -n new_name old_name                         | 重命名⽤户组                                   |
+| su - user_name                                        | su - user_name                                 |
+| passwd                                                | 修改⼝令                                       |
+| passwd codesheep                                      | 修改某⽤户的⼝令                               |
+| w                                                     | 查看活动⽤户                                   |
+| id codesheep                                          | 查看指定⽤户codesheep信息                      |
+| last                                                  | 查看⽤户登录⽇志                               |
+| crontab -l                                            | 查看当前⽤户的计划任务                         |
+| cut -d: -f1 /etc/passwd                               | 查看系统所有⽤户                               |
+| cut -d: -f1 /etc/group                                | 查看系统所有组                                 |
+
+
+
+**先阅读这篇[文章](https://blog.csdn.net/ver_mouth__/article/details/123772661)**
 
 ​	Linux系统是一个多用户多任务的分时操作系统，任何一个要使用系统资源的用户，都必须首先向系统管理员申请一个账号，然后以这个账号的身份进入系统。
 

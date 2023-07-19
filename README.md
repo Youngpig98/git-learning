@@ -18,6 +18,7 @@
 
 - [基础命令](./workspace/lesson8)
 - [VMware三种网络模式配置详解](https://blog.csdn.net/m0_61503020/article/details/128215674)
+- [NAT与PAT](https://blog.csdn.net/ver_mouth__/article/details/123525355)
 
 ### 文件管理
 
@@ -30,6 +31,7 @@
 ### 磁盘管理
 
 - [基础命令](./workspace/lesson11)
+- [磁盘管理与文件系统](https://blog.csdn.net/ver_mouth__/article/details/123819498)
 - [LVM的使用](./workspace/lesson12)
 - [df和du的使用及区别](https://blog.csdn.net/liuyang9909/article/details/123249917)
 - [服务器硬件及RAID配置实战](https://blog.csdn.net/ver_mouth__/article/details/123849048)
@@ -128,32 +130,7 @@
 | 查看io读写/cpu使⽤情况      | 查询cpu使⽤情况（1秒⼀次，共10次） |
 | sar -d 1 10                 | 查询磁盘性能                       |
 
-## 
 
-## ⽤户和⽤户组
-
-| 常用命令                                              | 作用                                           |
-| ----------------------------------------------------- | ---------------------------------------------- |
-| useradd codesheep                                     | 创建⽤户                                       |
-| userdel -r codesheep                                  | 删除⽤户                                       |
-| usermod -g group_name user_name                       | 修改⽤户的组                                   |
-| usermod -aG group_name user_name                      | 将⽤户添加到组                                 |
-| usermod -s /bin/ksh -d /home/codepig –g dev codesheep | 修改⽤户codesheep的登录Shell、主⽬录以及⽤户组 |
-| groups test                                           | 查看test⽤户所在的组                           |
-| groupadd group_name                                   | 创建⽤户组                                     |
-| groupdel group_name                                   | 删除⽤户组                                     |
-| groupmod -n new_name old_name                         | 重命名⽤户组                                   |
-| su - user_name                                        | su - user_name                                 |
-| passwd                                                | 修改⼝令                                       |
-| passwd codesheep                                      | 修改某⽤户的⼝令                               |
-| w                                                     | 查看活动⽤户                                   |
-| id codesheep                                          | 查看指定⽤户codesheep信息                      |
-| last                                                  | 查看⽤户登录⽇志                               |
-| crontab -l                                            | 查看当前⽤户的计划任务                         |
-| cut -d: -f1 /etc/passwd                               | 查看系统所有⽤户                               |
-| cut -d: -f1 /etc/group                                | 查看系统所有组                                 |
-
-## 
 
 ## 常⻅系统服务命令
 

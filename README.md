@@ -4,7 +4,6 @@
 
 ## 基础篇
 
-* [lesson7：软件包管理](./workspace/lesson7)
 * [Linux常用实战脚本](https://blog.csdn.net/ver_mouth__/article/details/128812171)
 
 ### 进程管理
@@ -17,8 +16,11 @@
 ### 网络管理
 
 - [基础命令](./workspace/lesson8)
+- [Linux网络设置](https://blog.csdn.net/ver_mouth__/article/details/124101310)
 - [VMware三种网络模式配置详解](https://blog.csdn.net/m0_61503020/article/details/128215674)
 - [NAT与PAT](https://blog.csdn.net/ver_mouth__/article/details/123525355)
+- [FTP文件传输协议](https://blog.csdn.net/ver_mouth__/article/details/124179311)
+- [SSH远程访问控制](https://blog.csdn.net/ver_mouth__/article/details/124225027)
 
 ### 文件管理
 
@@ -27,6 +29,7 @@
 - [⽂件查看和处理](./workspace/lesson2)
 - [source命令](./workspace/lesson5)
 - [用户和用户组管理](./workspace/lesson10)
+- [软件包管理](./workspace/lesson7)
 
 ### 磁盘管理
 
@@ -56,7 +59,7 @@
 
 ### 网络管理
 
-- [DNS笔记](https://www.cnblogs.com/ZhuChangwu/p/15241211.html)
+- [DNS域名解析服务](https://blog.csdn.net/ver_mouth__/article/details/124155268)
 
 ### 文件管理
 

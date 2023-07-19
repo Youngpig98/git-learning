@@ -66,28 +66,26 @@
 
 ### RPM包管理命令
 
-| 常用命令                  | 作用                          |
-| ------------------------- | ----------------------------- |
-| rpm -qa                   | 查看已安装的rpm包             |
-| rpm -q pkg_name           | 查询某个rpm包                 |
-| rpm -q --whatprovides xxx | 显示xxx功能是由哪个包提供的   |
-| rpm -q --whatrequires xxx | 显示xxx功能被哪个程序包依赖的 |
-| rpm -q --changelog xxx    | 显示xxx包的更改记录           |
-| rpm -qi pkg_name          | 查看⼀个包的详细信息          |
-| rpm -qd pkg_name          | 查询⼀个包所提供的⽂档        |
-| rpm -qc pkg_name          | 查看已安装rpm包提供的配置⽂件 |
-| rpm -ql pkg_name          | 查看⼀个包安装了哪些⽂件      |
-| rpm -qf filename          | 查看某个⽂件属于哪个包        |
-| rpm -qR pkg_name          | 查询包的依赖关系              |
-| rpm -ivh xxx.rpm          | 安装rpm包                     |
-| rpm -ivh --test xxx.rpm   | 测试安装rpm包                 |
-| rpm -ivh --nodeps xxx.rpm | 安装rpm包时忽略依赖关系       |
-| rpm -e xxx                | 卸载程序包                    |
-| rpm -Fvh pkg_name         | 升级确定已安装的rpm包         |
-| rpm -Uvh pkg_name         | 升级rpm包(若未安装则会安装)   |
-| rpm -V pkg_name           | RPM包详细信息校验             |
-
-
+| 常用命令                  | 作用                              |
+| ------------------------- | --------------------------------- |
+| rpm -qa                   | 查看已安装的rpm包                 |
+| rpm -q pkg_name           | 查询某个rpm包                     |
+| rpm -q --whatprovides xxx | 显示xxx功能是由哪个包提供的       |
+| rpm -q --whatrequires xxx | 显示xxx功能被哪个程序包依赖的     |
+| rpm -q --changelog xxx    | 显示xxx包的更改记录               |
+| rpm -qi pkg_name          | 查看⼀个包的详细信息              |
+| rpm -qd pkg_name          | 查询⼀个包所提供的⽂档            |
+| **rpm -qc pkg_name**      | **查看已安装rpm包提供的配置⽂件** |
+| rpm -ql pkg_name          | 查看⼀个包安装了哪些⽂件          |
+| rpm -qf filename          | 查看某个⽂件属于哪个包            |
+| rpm -qR pkg_name          | 查询包的依赖关系                  |
+| rpm -ivh xxx.rpm          | 安装rpm包                         |
+| rpm -ivh --test xxx.rpm   | 测试安装rpm包                     |
+| rpm -ivh --nodeps xxx.rpm | 安装rpm包时忽略依赖关系           |
+| rpm -e xxx                | 卸载程序包                        |
+| rpm -Fvh pkg_name         | 升级确定已安装的rpm包             |
+| rpm -Uvh pkg_name         | 升级rpm包(若未安装则会安装)       |
+| rpm -V pkg_name           | RPM包详细信息校验                 |
 
 
 
@@ -99,7 +97,14 @@
 
    在生产环境中的Linux，建议定期检查软件包，并进行升级。如`yum update`
 
-   
+
+
+
+## 参考
+
+[部署YUM仓库及NFS共享服务](https://blog.csdn.net/ver_mouth__/article/details/124281643)
+
+
 
 
 

@@ -92,6 +92,10 @@
 
 
 
+## 杂谈
+
+[存储](./workspace)
+
 ## Blog
 
 - [赐我白日梦](https://www.cnblogs.com/ZhuChangwu/category/1509541.html)

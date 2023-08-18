@@ -95,7 +95,7 @@ lrwxrwxrwx ... uts -> 'uts:[4026531838]'   # 注意这一行，和PID=1的uts in
 sudo unshare -u /bin/bash
 ```
 
-​	从进程关系`...---sudo(14278)---bash(14279)`可知两个进程PID是连续的，说明unshare程序对应的进程被/bin/bash程序通过**execve()**替换了。
+​	从进程关系`...---sudo(14278)---bash(14279)`可知两个进程PID是连续的，说明unshare程序对应的进程被/bin/bash程序通过execve()替换了。
 
 ​	详细的过程如下：**「sudo进程运行在当前namespace中，它将fork一个新进程来运行unshare程序，unshare程序加载完成后，将创建一个新的uts namespace，unshare进程自身将加入到这个uts namespace中，unshare进程内部再exec加载/bin/bash，于是unshare进程被替换为/bin/bash进程，/bin/bash进程也将运行在uts namespace中」**。
 

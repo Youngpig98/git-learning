@@ -115,3 +115,5 @@ $mount /app
 [使用fdisk进行磁盘分区](https://blog.csdn.net/lyc_258465/article/details/127726607)
 
 [服务器硬件及RAID配置实战](https://blog.csdn.net/ver_mouth__/article/details/123849048)
+
+[引导过程与服务控制](https://blog.csdn.net/ver_mouth__/article/details/123874038)

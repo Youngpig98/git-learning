@@ -10,7 +10,7 @@
 ​	我们可以通过 unshare 命令的 --user 选项来创建新的 user namespace：
 
 ```shell
-$ unshare -user -r /bin/bash
+$ unshare --user -r /bin/bash
 ```
 
 ![img](https://images2018.cnblogs.com/blog/952033/201808/952033-20180812133348283-931737385.png)
@@ -62,7 +62,7 @@ $ unshare --user /bin/bash
 ID-inside-ns ID-outside-ns length
 ```
 
-​	比如 0 1000 500 这条配置就表示父 user namespace 中的 1000~1500 映射到新 user namespace 中的 0~500。
+​	比如 0 1000 500 这条配置就表示父 user namespace 中的 1000至1500 映射到新 user namespace 中的 0至500。
 
 ​	对 uid_map 和 gid_map 文件的写入操作有着严格的权限控制，简单点说就是：**这两个文件的拥有者是创建新的 user namespace 的用户，所以和这个用户在一个 user namespace 中的 root 账号可以写**；这个用户自己是否有写 map 文件的权限还要看它有没有 CAP_SETUID 和 CAP_SETGID 的 capability。注意：只能向 map 文件写一次数据，但可以一次写多条，并且最多只能 5 条。
 我们把刚才打开的 shell 窗口称为**第一个 shell 窗口**开始执行用户的映射操作(把用户 nick 映射为新 user namespace 中的 root)。

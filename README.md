@@ -94,7 +94,8 @@
 
 ## 杂谈
 
-[存储](./workspace)
+- [服务器BMC与IPMI基础知识](https://blog.csdn.net/star871016/article/details/112257689)
+- [IPMI与iDrac的区别](https://blog.csdn.net/sj349781478/article/details/122276933)
 
 ## Blog
 

@@ -60,12 +60,14 @@
 ### 网络管理
 
 - [DNS域名解析服务](https://blog.csdn.net/ver_mouth__/article/details/124155268)
+- [PXE高效批量网络装机](https://blog.csdn.net/ver_mouth__/article/details/124299258)
 
 ### 文件管理
 
 - [Linux中软连接与硬连接](./workspace/senior/p1)
 - [rm删除文件后磁盘仍然占用](https://blog.csdn.net/zwe7616175/article/details/100728273)
 - [Find命令查找最近几天修改的文件](https://blog.csdn.net/linux_hua130/article/details/120782534)
+- [深入理解Linux文件系统与日志分析](https://blog.csdn.net/ver_mouth__/article/details/124039105)
 
 ### Namespace
 
